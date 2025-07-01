@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>1904 Team Grid</title>
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  .tile {
+    position: relative;
+    background: #111;
+    border: 2px solid #D4AF37;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .tile.sold {
+    filter: grayscale(100%);
+    opacity: 0.3;
+  }
+  .tile img {
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    margin: 0 auto 8px;
+  }
+</style>
+</head>
+<body>
+<div class="grid">
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Arizona_Diamondbacks.png" alt="Arizona Diamondbacks"><div>Arizona Diamondbacks</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Atlanta_Braves.png" alt="Atlanta Braves"><div>Atlanta Braves</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Baltimore_Orioles.png" alt="Baltimore Orioles"><div>Baltimore Orioles</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Boston_Red_Sox.png" alt="Boston Red Sox"><div>Boston Red Sox</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Chicago_Cubs.png" alt="Chicago Cubs"><div>Chicago Cubs</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Chicago_White_Sox.png" alt="Chicago White Sox"><div>Chicago White Sox</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Cincinnati_Reds.png" alt="Cincinnati Reds"><div>Cincinnati Reds</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Cleveland_Guardians.png" alt="Cleveland Guardians"><div>Cleveland Guardians</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Colorado_Rockies.png" alt="Colorado Rockies"><div>Colorado Rockies</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Detroit_Tigers.png" alt="Detroit Tigers"><div>Detroit Tigers</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Houston_Astros.png" alt="Houston Astros"><div>Houston Astros</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Kansas_City_Royals.png" alt="Kansas City Royals"><div>Kansas City Royals</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Los_Angeles_Angels.png" alt="Los Angeles Angels"><div>Los Angeles Angels</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Los_Angeles_Dodgers.png" alt="Los Angeles Dodgers"><div>Los Angeles Dodgers</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Miami_Marlins.png" alt="Miami Marlins"><div>Miami Marlins</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Milwaukee_Brewers.png" alt="Milwaukee Brewers"><div>Milwaukee Brewers</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Minnesota_Twins.png" alt="Minnesota Twins"><div>Minnesota Twins</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/New_York_Mets.png" alt="New York Mets"><div>New York Mets</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/New_York_Yankees.png" alt="New York Yankees"><div>New York Yankees</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Oakland_Athletics.png" alt="Oakland Athletics"><div>Oakland Athletics</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Philadelphia_Phillies.png" alt="Philadelphia Phillies"><div>Philadelphia Phillies</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Pittsburgh_Pirates.png" alt="Pittsburgh Pirates"><div>Pittsburgh Pirates</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/San_Diego_Padres.png" alt="San Diego Padres"><div>San Diego Padres</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/San_Francisco_Giants.png" alt="San Francisco Giants"><div>San Francisco Giants</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Seattle_Mariners.png" alt="Seattle Mariners"><div>Seattle Mariners</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/St._Louis_Cardinals.png" alt="St. Louis Cardinals"><div>St. Louis Cardinals</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Tampa_Bay_Rays.png" alt="Tampa Bay Rays"><div>Tampa Bay Rays</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Texas_Rangers.png" alt="Texas Rangers"><div>Texas Rangers</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Toronto_Blue_Jays.png" alt="Toronto Blue Jays"><div>Toronto Blue Jays</div></div>
+<div class="tile" onclick="this.classList.toggle('sold')"><img src="logos/Washington_Nationals.png" alt="Washington Nationals"><div>Washington Nationals</div></div>
+
+</div>
+<script>
+document.querySelectorAll('.tile').forEach(tile => {
+  tile.addEventListener('click', () => {
+    tile.classList.toggle('sold');
+  });
+});
+</script>
+</body>
+</html>
